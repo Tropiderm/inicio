@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Tropiderm - Contactanos</title>
+        <link rel="stylesheet"  href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="C:/Users/VENTA/Desktop/index/index.html">INICIO</a></li>
+                        <li><a href="C:\Users\VENTA\Desktop\index\benefits.html">BENEFICIOS</a></li>
+                        <li><a href="C:\Users\VENTA\Desktop\index\aboutUs.html">NOSOTROS</a></li>
+                        <li><a href="C:/Users/VENTA/Desktop/index/contact.html">CONTÁCTANOS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick= showMenu()></i>
+            </nav>
+            <h1>Contáctanos</h1>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Cumaná, Sucre, Venezuela</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+58 426-585-0432.</h5>
+                            <p>Lunes a Sábado, 10AM a 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>tropiderm.info@gmail.com</h5>
+                            <p>Envíanos tu mensaje</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                <form action="formHandler.php" method="post">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Título" required>
+                    <textarea rows="8" name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="red-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+                </div>
+
+        </section>
+
+         <section class="footer">
+                <h4>Sobre Nosotros</h4>
+                <p>Somos cinco estudiantes universitarios los cuales han creado una crema humectante en base a productos orgánicos con el fin de<br> ofrecer a las personas una opción totalmente natural a la hora de mantener hidratada su piel.</p>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <p>Copyright &copy; 2023 Tropiderm. Todos los derechos reservados.</p>
+            </section>
+    
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </body>
+</html>
